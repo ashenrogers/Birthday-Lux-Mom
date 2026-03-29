@@ -41,6 +41,18 @@ export default function Screen2({ onBack }) {
             >
                 <motion.div variants={fadeUp} className="header-section text-center">
                     <h2 className="section-title text-gold font-heading">Mom's 60th<br />Birthday Celebration</h2>
+
+                    <div className="profile-section">
+                        <div className="profile-frame">
+                            <img
+                                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=300&h=300"
+                                alt="Mom"
+                                className="profile-photo"
+                            />
+                        </div>
+                        <h3 className="profile-name font-heading text-gold">Celebrating Our Wonderful Mom</h3>
+                    </div>
+
                     <div className="divider"></div>
                 </motion.div>
 
