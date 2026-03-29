@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Music, VolumeX } from 'lucide-react';
 import Screen1 from './components/Screen1';
@@ -10,6 +10,32 @@ function App() {
   const [currentScreen, setCurrentScreen] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
+  const hasInteracted = useRef(false);
+
+  // Attempt to play music on the first user interaction anywhere on the screen
+  useEffect(() => {
+    const handleFirstInteraction = () => {
+      if (!hasInteracted.current && audioRef.current) {
+        audioRef.current.play().then(() => {
+          setIsPlaying(true);
+          hasInteracted.current = true;
+          // Remove listeners once audio successfully starts playing
+          window.removeEventListener('click', handleFirstInteraction);
+          window.removeEventListener('touchstart', handleFirstInteraction);
+        }).catch((err) => {
+          console.log("Browser blocked autoplay:", err);
+        });
+      }
+    };
+
+    window.addEventListener('click', handleFirstInteraction);
+    window.addEventListener('touchstart', handleFirstInteraction);
+
+    return () => {
+      window.removeEventListener('click', handleFirstInteraction);
+      window.removeEventListener('touchstart', handleFirstInteraction);
+    };
+  }, []);
 
   const toggleMusic = () => {
     if (isPlaying) {
