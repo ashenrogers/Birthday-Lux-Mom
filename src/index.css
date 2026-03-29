@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+:root {
+  --color-gold: #d4af37;
+  --color-gold-light: #f3e5ab;
+  --color-blush-pink: #f8c8dc;
+  --color-blush-dark: #e8a5be;
+  --color-cream: #fffdd0;
+  --color-white: #ffffff;
+  --color-text-dark: #333333;
+  --color-text-muted: #666666;
+  
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Elegant button style */
+.btn-primary {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-text-dark);
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+/* Utility classes */
+.text-gold { color: var(--color-gold); }
+.text-blush { color: var(--color-blush-pink); }
+.text-center { text-align: center; }
+.bg-cream { background-color: var(--color-cream); }
+.min-h-screen { min-height: 100vh; }
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
