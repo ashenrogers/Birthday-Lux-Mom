@@ -7,7 +7,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 import ammaImg from './Amma DP.jpeg';
 
 export default function Screen2({ onBack }) {
-    const eventDate = "2026-04-05T19:00:00";
+    const eventDate = "2026-04-05T19:30:00";
 
     const googleCalendarUrl = "https://calendar.google.com/calendar/r/eventedit?text=Mom%27s+60th+Birthday+Celebration&dates=20260405T190000/20260405T230000&details=Join+us+for+a+joyful+celebration!&location=Our+Home";
     const googleMapsUrl = "https://maps.app.goo.gl/FjFGDzZbHsuN2E8N9";
@@ -66,7 +66,7 @@ export default function Screen2({ onBack }) {
                     <div className="info-card">
                         <Clock className="info-icon text-gold" />
                         <h3>Time</h3>
-                        <p>Cake Cutting: 07:00 PM<br />Dinner: 8:00 PM</p>
+                        <p>Cake Cutting: 06:30 PM<br />Dinner: 7:30 PM</p>
                     </div>
                 </motion.section>
 
