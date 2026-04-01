@@ -4,6 +4,7 @@ import CountdownTimer from './CountdownTimer';
 import PhotoGallery from './PhotoGallery';
 import './Screen2.css';
 import { BsWhatsapp } from 'react-icons/bs';
+import ammaImg from './Amma DP.jpeg';
 
 export default function Screen2({ onBack }) {
     const eventDate = "2026-04-05T19:00:00";
@@ -45,7 +46,7 @@ export default function Screen2({ onBack }) {
                     <div className="profile-section">
                         <div className="profile-frame">
                             <img
-                                src="src\components\Amma DP.jpeg"
+                                src={ammaImg}
                                 alt="Mom"
                                 className="profile-photo"
                             />

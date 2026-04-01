@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Sparkles, CalendarHeart, ArrowRight } from 'lucide-react';
 import './Screen1.css';
+import ammaImg from './Amma DP.jpeg';
 
 export default function Screen1({ onNext }) {
     // Floating animation variants
@@ -43,7 +44,7 @@ export default function Screen1({ onNext }) {
             >
                 <motion.div variants={fadeUp} className="photo-frame">
                     <img
-                        src="src\components\Amma DP.jpeg "
+                        src={ammaImg}
                         alt="Mom's 60th"
                         className="mom-photo"
                     />
