@@ -43,7 +43,7 @@ export default function Screen1({ onNext }) {
             >
                 <motion.div variants={fadeUp} className="photo-frame">
                     <img
-                        src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=300&h=300"
+                        src="src\components\Amma DP.jpeg "
                         alt="Mom's 60th"
                         className="mom-photo"
                     />

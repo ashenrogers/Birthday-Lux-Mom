@@ -45,7 +45,7 @@ export default function Screen2({ onBack }) {
                     <div className="profile-section">
                         <div className="profile-frame">
                             <img
-                                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=300&h=300"
+                                src="src\components\Amma DP.jpeg"
                                 alt="Mom"
                                 className="profile-photo"
                             />
@@ -116,12 +116,17 @@ export default function Screen2({ onBack }) {
                 <motion.section variants={fadeUp} className="footer-section text-center bg-cream">
                     <h3 className="rsvp-title font-heading text-gold">Contact</h3>
                     <p className="rsvp-contact">
-                        <Phone size={18} /> +94 (076) 430 4845 <br />
-
-                        <BsWhatsapp size={18} /> +94 (076) 430 4845
+                        <strong>Eugin Luxman</strong><br />
+                        <a href="tel:+94764304845" style={{ color: 'inherit', textDecoration: 'none' }}>
+                            <Phone size={18} className="inline-icon" /> +94 (076) 430 4845
+                        </a>
+                        <br />
+                        <a href="https://wa.me/94764304845" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                            <BsWhatsapp size={18} className="inline-icon" /> +94 (076) 430 4845
+                        </a>
                     </p>
                     <p className="special-note">
-                        "Your presence is the best gift we could ask for <Heart size={18} className="text-blush inline-icon" fill="currentColor" />"
+                        "Your presence is the best gift we could ask for <Heart size={23} color="red" className="text-blush inline-icon" fill="red" />"
                     </p>
                 </motion.section>
 

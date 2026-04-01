@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -11,6 +11,13 @@ const images = [
 
 export default function PhotoGallery() {
     const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setIndex((prev) => (prev + 1) % images.length);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, []);
 
     const nextSlide = () => {
         setIndex((prev) => (prev + 1) % images.length);
