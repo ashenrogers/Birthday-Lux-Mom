@@ -40,7 +40,7 @@ export default function Screen2({ onBack }) {
                 animate="show"
             >
                 <motion.div variants={fadeUp} className="header-section text-center">
-                    <h2 className="section-title text-gold font-heading">Mom's 60th<br />Birthday Celebration</h2>
+                    <h2 className="section-title text-gold font-heading">Amma's 60th<br />Birthday Celebration</h2>
 
                     <div className="profile-section">
                         <div className="profile-frame">
@@ -50,7 +50,6 @@ export default function Screen2({ onBack }) {
                                 className="profile-photo"
                             />
                         </div>
-                        <h3 className="profile-name font-heading text-gold">Celebrating Our Wonderful Mom</h3>
                     </div>
 
                     <div className="divider"></div>

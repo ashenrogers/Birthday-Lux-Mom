@@ -56,7 +56,7 @@ export default function Screen1({ onNext }) {
                 </motion.div>
 
                 <motion.h1 variants={fadeUp} className="main-title text-gold">
-                    You're Invited to Celebrate<br />Mom's 60th Birthday
+                    You're Invited to Celebrate<br />Amma's 60th Birthday
                 </motion.h1>
 
                 <motion.p variants={fadeUp} className="subtext">
