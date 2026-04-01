@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { CalendarDays, MapPin, Clock, Phone, Mail, ArrowLeft, Heart } from 'lucide-react';
 import CountdownTimer from './CountdownTimer';
-import PhotoGallery from './PhotoGallery';
+
 import './Screen2.css';
 import { BsWhatsapp } from 'react-icons/bs';
 import ammaImg from './Amma DP.jpeg';
@@ -108,10 +108,7 @@ export default function Screen2({ onBack }) {
                     </div>
                 </motion.section>
 
-                {/* Photo Gallery */}
-                <motion.section variants={fadeUp} className="gallery-section">
-                    <PhotoGallery />
-                </motion.section>
+
 
                 {/* RSVP and Special Note */}
                 <motion.section variants={fadeUp} className="footer-section text-center bg-cream">
