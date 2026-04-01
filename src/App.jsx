@@ -3,7 +3,8 @@ import { AnimatePresence } from 'framer-motion';
 import { Music, VolumeX } from 'lucide-react';
 import Screen1 from './components/Screen1';
 import Screen2 from './components/Screen2';
-import backgroundMusic from './components/Happy Birthday (Background Score).mp3';
+//import backgroundMusic from './components/Happy Birthday (Background Score).mp3';
+import backgroundMusic from './components/WhatsApp Audio 2026-04-01 at 1.36.11 PM.mp3';
 import './index.css';
 
 function App() {
