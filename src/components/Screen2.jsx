@@ -61,7 +61,7 @@ export default function Screen2({ onBack }) {
                     <div className="info-card">
                         <CalendarDays className="info-icon text-gold" />
                         <h3>Date</h3>
-                        <p>Saturday, April 05, 2026</p>
+                        <p>Sunday, April 05, 2026</p>
                     </div>
                     <div className="info-card">
                         <Clock className="info-icon text-gold" />
